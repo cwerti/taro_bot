@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js{
+    width: 450px;
+    z-index: 2;
+    height: 1200px;
+}
+
+#bg{
+   z-index: 2;
+}
+body{
+    background: #0f0a18
+    display: flex;
+    align-items: centre;
+    justify-content: centre;
+        background: #221a30;
+}
+
+.card{
+    --bs-card-bg: #0000;
+    width: 450px;
+    height: 560px;
+    z-index: 2;
+}
+
+img{
+    width: 200 px;
+    height: 400px;
+    margin: 10% auto;
+    z-index: 3;
+
+}
+

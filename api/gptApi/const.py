@@ -1,0 +1,3 @@
+IAM_TOKEN = "t1.9euelZrPi8aXj83Li87HmZ3Hm8jNzu3rnpWaks-enZKWypmMkpGJm5uYnMbl9PdTPmFL-e9IeDeV3fT3E21eS_nvSHg3lc3n9euelZqUz82UnZaUx8qMyJmWyIzHzu_8xeuelZqUz82UnZaUx8qMyJmWyIzHzg.pJQEX1nLFf066ryT_Z4kUwjlrcNT9i8h9G7ryQ0DzISkAIBq3J93gRccaIVasszJAlJu8xu-UVzjB_HHZN9PAQ"
+URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completionAsync"
+x_folder_id = "b1gqrs6dt5lsd8sdcb9n"
