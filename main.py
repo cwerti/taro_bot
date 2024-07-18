@@ -1,9 +1,11 @@
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Form
 from starlette.staticfiles import StaticFiles
 
 from api.app.database.db_session import database_init
 from api.app.routes import include_routers
+from pydantic import BaseModel
+from typing import Union
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="api/app/static"), name="static")
@@ -16,4 +18,4 @@ async def startup_event():
 
 if __name__ == "__main__":
     include_routers(app)
-    uvicorn.run(app=app, host='127.0.0.1', port=0000)
+    uvicorn.run(app=app, host='127.0.0.1', port=62098)

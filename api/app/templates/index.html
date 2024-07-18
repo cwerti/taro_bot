@@ -5,13 +5,30 @@
 {% endblock %}
 
 {% block content %}
-<div style="position: relative;">
-<div id="bg" style="position: absolute; z-index: 2;">
-    <div id="particles-js"></div>
+<div style="position: relative; height: 700px; display: grid;">
+    <div id="bg" style="position: absolute; z-index: 2;">
+        <div id="particles-js"></div>
+    </div>
+
+    <div class="logo">
+        <img src="../static/images/logo.png" alt="">
+    </div>
+
+    <div class="card" style=" z-index: 3;">
+        <img src="../static/images/cards/logo.png" alt="" id="thumb">
+    </div>
+
+    <form class="question-box" action="postdata" method="post">
+        <input type="text" placeholder="Ask your question" name="text">
+
+    </form>
+
+    <div class="footer">
+        <p>Home</p>
+        <p>Tasks</p>
+        <p>Frens</p>
+    </div>
+
 </div>
 
-<div class="card" style="position: absolute; z-index: 3;">
-    <img src="../static/images/cards/logo.png" alt="" >
-</div>
-</div>
 {% endblock %}

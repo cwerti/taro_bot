@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 #particles-js{
     width: 450px;
     z-index: 2;
-    height: 1200px;
+    height: 1000px;
 }
 
 #bg{
@@ -18,21 +18,89 @@ body{
     display: flex;
     align-items: centre;
     justify-content: centre;
-        background: #221a30;
+    background: #221a30;
+    font-family: "Jost"
+}
+
+.logo{
+    --bs-card-bg: #0000;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+}
+
+.logo img{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 3% auto;
+    z-index: 3;
+
 }
 
 .card{
     --bs-card-bg: #0000;
     width: 450px;
-    height: 560px;
     z-index: 2;
 }
 
-img{
-    width: 200 px;
-    height: 400px;
-    margin: 10% auto;
+.card img{
+    display: block;
+    width: 200px;
+    height: 350px;
+    margin: 3% auto;
     z-index: 3;
-
+    transition: transform 2s;
+    animation: show 0.4s;
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0.5s; /* Задержка перед началом */
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 }
 
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    100% {
+        transform: rotateY(200deg);
+        opacity:1;
+    }
+}
+
+.question-box{
+    --bs-card-bg: #0000;
+    width: 450px;
+    z-index: 2;
+}
+
+.question-box h1{
+    text-align: center;
+    display: block;
+    margin: 3% auto;
+    color: white;
+}
+
+.question-box input{
+    display: block;
+    margin: 3% auto;
+    width: 70%;
+    height: 30%;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #53377a;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+
+.footer p{
+    margin: 3% auto;
+}
