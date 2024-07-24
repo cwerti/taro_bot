@@ -12,14 +12,6 @@ templates = Jinja2Templates(directory="api/app/templates")
 
 
 @router.post("/postdata")
-async def question(
-        request: Request,
-        text=Form()
-):
-    print(text)
-    return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-        }
-    )
+async def input_request(request: Request):
+    print(await request.body())
+    return await request.body()
