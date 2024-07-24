@@ -1,8 +1,8 @@
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
-from sqlalchemy import ForeignKey, Integer, String, JSON
+from sqlalchemy import ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, declared_attr, mapped_column
 
-from api.app.database.models.base_model import BaseModel
+from app.database.models.base_model import BaseModel
 from fastapi_users_db_sqlalchemy.access_token import (
     SQLAlchemyBaseAccessTokenTable,
 )

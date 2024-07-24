@@ -4,10 +4,10 @@ from starlette.requests import Request
 from starlette.responses import HTMLResponse
 from starlette.templating import Jinja2Templates
 
-from api.app.database.db_session import get_async_session
+from app.database.db_session import get_async_session
 
 router = APIRouter()
-templates = Jinja2Templates(directory="api/app/templates")
+templates = Jinja2Templates(directory="app/templates")
 
 
 @router.get("/", response_class=HTMLResponse)

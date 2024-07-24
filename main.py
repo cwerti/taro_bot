@@ -1,14 +1,12 @@
 import uvicorn
-from fastapi import FastAPI, Form
+from fastapi import FastAPI
 from starlette.staticfiles import StaticFiles
 
-from api.app.database.db_session import database_init
-from api.app.routes import include_routers
-from pydantic import BaseModel
-from typing import Union
+from app.database.db_session import database_init
+from app.routes import include_routers
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="api/app/static"), name="static")
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 
 @app.on_event("startup")

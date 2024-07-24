@@ -1,8 +1,7 @@
-from sqlalchemy import ForeignKey, Integer, String
-from sqlalchemy.orm import Mapped, declared_attr, mapped_column
+from sqlalchemy import Integer, String
+from sqlalchemy.orm import Mapped, mapped_column
 
-from api.app.database.models.base_model import BaseModel
-from api.app.schemas.history_questions import AnswerType
+from app.database.models.base_model import BaseModel
 
 
 class History(BaseModel):
